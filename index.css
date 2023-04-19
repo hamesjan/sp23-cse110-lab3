@@ -1,0 +1,117 @@
+/* this will apply to all text*/
+*{
+    font-family:'Courier New', Courier, monospace;
+}
+
+/* class selector*/
+.meeting-title{
+    width: 20vw;
+    color: rgb(0, 100, 255);
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: white;
+}
+
+/* id selector*/
+#question-form{
+    display: block;
+    margin: 2rem 2rem 2rem 2rem;
+    background-color: grey;
+    border: 3px solid #1E1E1E;
+    padding: 30px 30px 30px 30px;
+    max-width: 300px;
+    text-align: center;
+}
+
+/* pseudo-selector */
+a:hover{
+    color: #F3F;
+}
+
+input:active{
+    border-style: dotted;
+    border-color: red;
+    border-width: 1mm;
+    border-radius: 20px;
+}
+
+/*global selectors*/
+em{
+   color: hsl(0, 100%, 50%)
+}
+
+h2{
+    font-size: 2em;
+    font-weight: 200;
+}
+
+/*attribute selector*/
+p[point="p"]{
+    font-size: 20pt;
+}
+
+section, span{
+    max-width: 400px;
+    min-width: 400px;
+}
+
+
+ul li{
+    text-decoration: dashed;
+    font-size: 30px;
+    color: green;
+}
+
+li > p{
+    text-align: left;
+}
+
+input ~ br{
+    width: max-content;
+    height: 2px;
+}
+
+input ~ br{
+    width: max-content;
+    display: inline-block;
+}
+
+header + h1{
+    text-shadow: #1E1E1E;
+    display: none;
+    position: static;
+}
+
+div.general-info{
+    border: 1px solid black;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    margin-right: 8px;
+    margin-left: 8px;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    display: grid;
+    grid-column: span;
+}
+
+#info-1{
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+
+}
+
+div ~ span{
+    flex: 3;
+    flex-wrap: nowrap;
+    flex-grow: 1;
+}
+
+@media screen and (max-width: 500px) {
+  body {
+    font-size: 35px;
+  }
+}
