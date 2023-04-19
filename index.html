@@ -3,40 +3,45 @@
   <head>
     <title>Meeting Minutes</title>
     <meta charset="UTF-8">
-    <link rel="icon" href="media/favicon-16x16.png" type="image/png"> 
+    <link rel="icon" href="media/favicon-16x16.png" type="image/png">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Font+Name">
  </head>
   <body>
     <main>
         <header>
-            <h1>LLM Project Meeting 1</h1>
+            <h1 style="position: absolute;bottom: 0;right: 0;">Hi.</h1>
+            <h1 class="meeting-title">LLM Project Meeting 1</h1>
             <h2>Initial Brainstorming session</h2>
             <h2>April 12, 2023</h2>
-            <nav>
+            <nav >
                 <h3>Agenda</h3>
                 <ol>
                     <li>
                         <p>Overview</p>
                     </li>
                     <li>
-                        <p>Meeting Points</p>
+                        <p point="p">Meeting Points</p>
                     </li>
                 </ol>
                 <ul>
                     <li>
-                        <p>50 more days to go!</p>
+                        Hello
+                        <p point="p">50 more days to go!</p>
                     </li>
                     <li>
-                        <p>Sprint that last stretch.</p>
+                        <p point="p">Sprint that last stretch.</p>
                     </li>
                 </ul>
             </nav>
         </header>
         <hr>
-        <section>
+        <section >
         <h2>
             Meeting Details
         </h2>
     
+        <div class="general-info" id="info-1">
         <span> Meeting was 5/5</span>
                 <details>
                     <summary>Attendance</summary>
@@ -44,8 +49,8 @@
                         <p>John</p>
                         <p>Joann</p>
                 </details>
-        </section>
-        <div>
+            </div>
+        <div class="general-info">
            <b>Unfinished Biz</b>
            <br>
             We had a <strong>strong</strong> start last week with our team introductions.
@@ -55,6 +60,10 @@
             <br>
             <strong>We are making a surf tracker</strong>
             <br>
+            <div >
+
+
+            </div>
             <video src="media/surf_follow.mov" height="200" width="200" controls>
               NO VIDEO DETECTED
             </video>
@@ -71,13 +80,17 @@
             We are deciding on <a href="a.com">rec.com</a> for our website name.
         </div>
         <hr>
-        <section>
+    </section>
+        <section id="question-form">
             <h3>Any questions?</h3>
             <i>fill out this form.</i>
-            <br>
-            Who is this for?<input type="text">
-            <br>
-            When is this for?<input type="date">
+            <div style="display: flex;">
+                Who is this for?<input type="text">
+            </div>
+            <div style="display: flex;">
+                Whhen is this for?<input type="date">
+            </div>
+        
             <br>            
             <form>
                 <fieldset>
